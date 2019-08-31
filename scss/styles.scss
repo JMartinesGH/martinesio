@@ -10,4 +10,35 @@ html{
 
 body{
     min-height: 100vh;
+    background-color: purple;
+}
+
+.container{
+    max-width: 1200px;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+
+    > div{
+        flex: 1;
+    }
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.job{
+    background: rgba(255,255,255,0.5);
+}
+
+h1,h2{
+    text-align: center;
 }
