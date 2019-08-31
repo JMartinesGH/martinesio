@@ -1,0 +1,19 @@
+{
+  "name": "martinesio",
+  "version": "1.0.0",
+  "description": "Resume page for Jamie Martines",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JMartinesGH/martinesio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JMartinesGH/martinesio/issues"
+  },
+  "homepage": "https://github.com/JMartinesGH/martinesio#readme"
+}
