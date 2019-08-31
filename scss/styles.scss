@@ -35,7 +35,7 @@ h1,h2{
 
 .row{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
     > div{
         flex: 1;
@@ -52,12 +52,12 @@ h1,h2{
 }
 
 .square{
-    background-color: #FFB6C1;
+    background-color: PaleVioletRed;
     color: white;
     padding: 10px;
     margin: 30px;
     box-sizing: content-box;
-    box-shadow: 20px 20px 0px purple;
+    box-shadow: 20px 20px 0px DarkOrchid;
 
     h3{
         margin: 0;
@@ -84,5 +84,12 @@ footer{
     
     li{
         display: inline-block;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .row{
+        display: flex;
+        flex-direction: row;
     }
 }
