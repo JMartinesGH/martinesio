@@ -25,7 +25,7 @@ h1,h2{
 
 .container{
     max-width: 1200px;
-    padding: 0 15px;
+    padding: 0 10px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -36,7 +36,6 @@ h1,h2{
 .row{
     display: flex;
     flex-direction: column;
-
     > div{
         flex: 1;
     }
@@ -45,7 +44,6 @@ h1,h2{
 .column{
     display: flex;
     flex-direction: column;
-    
     > div{
         flex: 1;
     }
@@ -56,7 +54,6 @@ h1,h2{
     color: white;
     padding: 10px;
     margin: 30px;
-    box-sizing: content-box;
     box-shadow: 20px 20px 0px DarkOrchid;
 
     h3{
@@ -70,6 +67,12 @@ h1,h2{
 
 .job{
     text-align: left;
+    margin-top: 1em;
+    padding-bottom: 1em;
+    border-bottom: 2px solid #fff;
+    &:last-child{
+        border-bottom: none;
+    }
 }
 
 .small{
@@ -80,8 +83,9 @@ footer{
     ul{
         list-style: none;
         text-align: center;
+        padding: 0;
     }
-    
+
     li{
         display: inline-block;
     }
