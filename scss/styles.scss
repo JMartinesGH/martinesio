@@ -1,4 +1,3 @@
-// styles go here
 html, body{
     margin: 0;
     padding: 0;
@@ -6,11 +5,22 @@ html, body{
 
 html{
     box-sizing: border-box;
+    background: repeating-linear-gradient(
+        45deg,
+        #606dbc,
+        #606dbc 40px,
+        #465298 40px,
+        #465298 80px
+    );
 }
 
 body{
     min-height: 100vh;
-    background-color: purple;
+    background: rgba(0,0,0,0.15);
+}
+
+h1,h2{
+    text-align: center;
 }
 
 .container{
@@ -19,6 +29,8 @@ body{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .row{
@@ -33,12 +45,44 @@ body{
 .column{
     display: flex;
     flex-direction: column;
+    
+    > div{
+        flex: 1;
+    }
+}
+
+.square{
+    background-color: #FFB6C1;
+    color: white;
+    padding: 10px;
+    margin: 30px;
+    box-sizing: content-box;
+    box-shadow: 20px 20px 0px purple;
+
+    h3{
+        margin: 0;
+    }
+
+    p{
+        margin: 1em 0;
+    }
 }
 
 .job{
-    background: rgba(255,255,255,0.5);
+    text-align: left;
 }
 
-h1,h2{
-    text-align: center;
+.small{
+    font-size: 0.75em;
+}
+
+footer{
+    ul{
+        list-style: none;
+        text-align: center;
+    }
+    
+    li{
+        display: inline-block;
+    }
 }
