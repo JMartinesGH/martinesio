@@ -21,6 +21,24 @@ body{
 
 h1,h2{
     text-align: center;
+    line-height: 1;
+}
+
+h1{
+    font-size: 3em;
+    margin: 0.2em 0 0.5em;
+    padding: 0;
+}
+
+h2{
+    font-size: 1.2em;
+    margin: 0 0 0.5em;
+}
+
+header{
+    p{
+        text-align: left;
+    }
 }
 
 .container{
@@ -58,6 +76,8 @@ h1,h2{
 
     h3{
         margin: 0;
+        color: #465298;
+        font-size: 2em;
     }
 
     p{
@@ -69,7 +89,7 @@ h1,h2{
     text-align: left;
     margin-top: 1em;
     padding-bottom: 1em;
-    border-bottom: 2px solid #fff;
+    border-bottom: 1px solid #fff;
     &:last-child{
         border-bottom: none;
     }
@@ -92,6 +112,11 @@ footer{
 }
 
 @media screen and (min-width: 768px){
+    header{
+        p{
+            text-align: center;
+        }
+    }
     .row{
         display: flex;
         flex-direction: row;
