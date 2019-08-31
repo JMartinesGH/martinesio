@@ -196,12 +196,4 @@ footer{
     .print{
         display: inline-block;
     }
-
-    @page :footer {
-        display: none
-    }
-
-    @page :header {
-        display: none
-    }
 }
