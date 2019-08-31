@@ -149,6 +149,10 @@ footer{
     body{
         font-size: 12px;
         margin: 0;
+        padding: 0;
+    }
+    .container{
+        padding: none;
     }
     h1{
         font-size: 1.2em;
@@ -195,5 +199,9 @@ footer{
     }
     .print{
         display: inline-block;
+    }
+
+    @page{
+        margin: 0;
     }
 }
