@@ -81,17 +81,14 @@ header{
     padding: 10px;
     margin: 30px;
     box-shadow: 20px 20px 0px DarkOrchid;
-
     h3{
         margin: 0;
         // color: #465298;
         border-bottom: dotted #fff;
         font-size: 2em;
     }
-
     p{
         margin: 1em auto;
-        max-width: 700px;
     }
 }
 
@@ -113,13 +110,16 @@ header{
     font-size: 0.75em;
 }
 
+.print{
+    display: none;
+}
+
 footer{
     ul{
         list-style: none;
         text-align: center;
         padding: 0;
     }
-
     li{
         display: inline-block;
         padding: 0 1em;
@@ -141,5 +141,59 @@ footer{
 @media screen and (min-width: 1200px){
     body{
         font-size: 16px;
+    }
+}
+
+
+@media print{
+    body{
+        font-size: 12px;
+        margin: 0;
+    }
+    h1{
+        font-size: 1.2em;
+    }
+    h2{
+        font-size: 1em;
+    }
+    .job{
+        margin-top: 0;
+        padding-bottom: 0;
+        ul{
+            margin: 0 0 5px;
+        }
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .column{
+        > div{
+            flex: 0;
+        }
+    }
+    .square{
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+        h3{
+            font-size: 1.2em;
+        }
+        p{
+            margin: 0;
+        }
+    }
+    footer{
+        display: none;
+    }
+    #three{
+        order:-1;
+        flex-direction: column;
+        > div{
+            flex: 1;
+        }
+    }
+    .print{
+        display: inline-block;
     }
 }
